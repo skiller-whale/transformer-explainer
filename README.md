@@ -1,13 +1,15 @@
 # Transformer Explainer: Interactive Learning of Text-Generative Models
 
-Transformer Explainer is an interactive visualization tool designed to help anyone learn how Transformer-based models like GPT work. It runs a live GPT-2 model right in your browser, allowing you to experiment with your own text and observe in real time how internal components and operations of the Transformer work together to predict the next tokens. Try Transformer Explainer at http://poloclub.github.io/transformer-explainer and watch a demo video on YouTube https://youtu.be/TFUc41G2ikY.<br/><br/>
+> **This is a [Skiller Whale](https://github.com/skiller-whale) fork of [poloclub/transformer-explainer](https://github.com/poloclub/transformer-explainer).** See the original repository for the research paper, authors, and official demo.
+
+Transformer Explainer is an interactive visualization tool designed to help anyone learn how Transformer-based models like GPT work. It runs a live GPT-2 model right in your browser, allowing you to experiment with your own text and observe in real time how internal components and operations of the Transformer work together to predict the next tokens. Try it at https://skiller-whale.github.io/transformer-explainer/ and watch a demo video on YouTube https://youtu.be/TFUc41G2ikY.<br/><br/>
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 [![arxiv badge](https://img.shields.io/badge/arXiv-2408.04619-red)](https://arxiv.org/abs/2408.04619)
 
 <a href="https://youtu.be/TFUc41G2ikY" target="_blank"><img width="100%" src='https://github.com/user-attachments/assets/0a4d8888-6555-4df5-bc71-77f1299115c3'></a>
 
 ## Live Demo
-Try Transformer Explainer: http://poloclub.github.io/transformer-explainer
+Try Transformer Explainer: https://skiller-whale.github.io/transformer-explainer/
 
 ## Research Paper
 
@@ -25,13 +27,24 @@ _Poster, IEEE VIS 2024._
 #### Steps
 
 ```bash
-git clone https://github.com/poloclub/transformer-explainer.git
+git clone https://github.com/skiller-whale/transformer-explainer.git
 cd transformer-explainer
 npm install
 npm run dev
 ```
 
 Then, on your web browser, access http://localhost:5173.
+
+## Deploying to GitHub Pages
+
+```bash
+npm run build
+npm run deploy
+```
+
+`npm run deploy` pushes the `build/` directory to the `gh-pages` branch. GitHub Pages must be configured to serve from that branch (repo Settings → Pages → Branch: `gh-pages` / `/(root)`).
+
+The first time, you'll need to set this up in GitHub before the deployment URL becomes live. After that, every `npm run deploy` updates the site.
 
 ## Credits
 
