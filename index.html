@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Transformer Explainer: LLM Transformer Model Visually Explained</title>
+
+		<!-- Primary Meta Tags -->
+		<meta name="title" content="Transformer Explainer: LLM Transformer Model Visually Explained" />
+		<meta
+			name="description"
+			content="An interactive visualization tool showing you how transformer models work in large language models (LLM) like GPT."
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://poloclub.github.io/transformer-explainer/" />
+		<meta
+			property="og:title"
+			content="Transformer Explainer: LLM Transformer Model Visually Explained"
+		/>
+		<meta
+			property="og:description"
+			content="An interactive visualization tool showing you how transformer models work in large language models (LLM) like GPT."
+		/>
+		<meta
+			property="og:image"
+			content="https://poloclub.github.io/transformer-explainer/preview/summary.png"
+		/>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://poloclub.github.io/transformer-explainer/" />
+		<meta
+			property="twitter:title"
+			content="Transformer Explainer: LLM Transformer Model Visually Explained"
+		/>
+		<meta
+			property="twitter:description"
+			content="An interactive visualization tool showing you how transformer models work in large language models (LLM) like GPT."
+		/>
+		<meta
+			property="twitter:image"
+			content="https://poloclub.github.io/transformer-explainer/preview/summary.png"
+		/>
+
+		<link href="./_app/immutable/entry/start.OOQwLUh8.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Bi_a5r07.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Cr_sovQ8.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DhFnOBSy.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.CtQB4_GL.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/0i8EslNt.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BQIidq0B.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BKRhpDl9.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.D2Lvq02P.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DNutZbWf.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DXyqA_UV.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.CKFHprAM.js" rel="modulepreload">
+		<!--oiohk3--><!--[!--><!--]--> <!--[!--><!--]--><!---->
+		<link href="./_app/immutable/assets/animation.CweeMKoS.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/0.CXWX_-XS.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.D9FId_q3.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!--[--><!----> <div id="app" style="--min-screen-width:1300px;--min-column-width:22px;--predicted-color:#7E3AF2;" class="svelte-12qhfyh"><div id="landing" class="svelte-12qhfyh"><header style="transform: translateX(0px);" class="svelte-12qhfyh"><div class="top-bar flex w-full items-center gap-4 px-10 py-2 pb-3 svelte-fp80xw"><div class="logo text-bold text-gray-700 svelte-fp80xw" data-click="logo">SW T<span class="small svelte-fp80xw">RANSFORMER</span> E<span class="small svelte-fp80xw">XPLAINER</span></div> <div class="inputs flex grow items-center"><div class="input-wrapper w-full svelte-fp80xw"><!--[--><div class="input-area svelte-1fgzpdu" data-click="input-area"><form class="input-form svelte-1fgzpdu" data-click="input-form"><div class="inline-flex rounded-lg shadow-sm input-btn-group" role="group"><!--[--><button data-click="dropdown-btn" type="button" class="select-button inline-flex shrink-0 items-center justify-center border border-s-0 border-gray-200 bg-white px-3 py-2 text-center text-xs font-medium text-gray-900 first:rounded-s-lg first:border-s last:rounded-e-lg svelte-1fgzpdu">Examples<!--[!--><svg xmlns="http://www.w3.org/2000/svg" fill="none" color="currentColor" class="shrink-0 pointer-events-none h-4 w-4 text-gray-500" role="img" aria-label="chevron down outline" viewBox="0 0 24 24"><!--[!--><!--]--><!--[!--><!--]--><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 10 4 4 4-4"></path></svg><!--]--><!----></button> <!--[--><div></div><!--]--> <!--[!--><!--]--><!----> <div data-click="text-input" class="input-container svelte-1fgzpdu disabled" role="none"><div class="editable w-full svelte-1fgzpdu"><div contenteditable="false" class="text-box svelte-1fgzpdu" placeholder="Test your own input text" role="input">A labrador is a type of</div> <!--[--><div class="predicted svelte-1fgzpdu" role="none"><span class="svelte-1fgzpdu"></span></div><!--]--></div> <!--[!--><!--]--> <!--[!--><!--]--></div><!--]--></div><!----> <button data-click="generate-btn" disabled="" class="generate-button rounded-lg text-center text-sm shadow-sm disabled svelte-1fgzpdu" type="button">Generate</button></form> <div class="parameters svelte-1fgzpdu" data-click="input-parameters"><div class="temperature-input svelte-1fd34bm" data-click="temperature-input"><div class="slider-input shrink-0 text-gray-900 temperature-slider svelte-gn8ezv"><div class="slider-head flex w-full shrink-0 items-center justify-center"><!--[--><div class="temperature-text flex items-center gap-[2px] svelte-1fd34bm"><div>Temperature</div></div><!--]--></div> <div class="slider-container svelte-gn8ezv"><input class="slider svelte-gn8ezv" type="range" min="0" max="17" step="1" value="6"/> <div class="value svelte-gn8ezv"><p>0.8</p></div></div></div><!----></div><!----> <div class="sampling-input svelte-18ov5n7" data-click="input-sampling"><div class="slider-input shrink-0 text-gray-900 sampling-slider svelte-gn8ezv"><div class="slider-head flex w-full shrink-0 items-center justify-center"><!--[--><div class="sampling-type svelte-18ov5n7"><div class="title flex items-center gap-[2px] svelte-18ov5n7"><div>Sampling</div></div> <div class="sampling-type-input flex svelte-18ov5n7"><!--[--><label class="text-sm rtl:text-right font-medium text-gray-900 dark:text-gray-300 inline-flex items-center type-btn"><!--[--><input type="radio" checked="" value="top-k" class="w-4 h-4 bg-gray-100 border-gray-300 dark:ring-offset-gray-800 focus:ring-2 me-2 dark:bg-gray-700 dark:border-gray-600 text-purple-600 focus:ring-purple-500 dark:focus:ring-purple-600" name="sampling-type"/> <!--[--><!---->Top-k<!--]--><!--]--></label><!--]--><!----> <!--[--><label class="text-sm rtl:text-right font-medium text-gray-900 dark:text-gray-300 inline-flex items-center type-btn"><!--[--><input type="radio" value="top-p" class="w-4 h-4 bg-gray-100 border-gray-300 dark:ring-offset-gray-800 focus:ring-2 me-2 dark:bg-gray-700 dark:border-gray-600 text-purple-600 focus:ring-purple-500 dark:focus:ring-purple-600" name="sampling-type"/> <!--[--><!---->Top-p<!--]--><!--]--></label><!--]--><!----></div></div><!--]--></div> <div class="slider-container svelte-gn8ezv"><input class="slider svelte-gn8ezv" type="range" min="1" max="50" step="1" value="50"/> <div class="value svelte-gn8ezv"><p>k=50</p></div></div></div><!----></div><!----></div></div><!--]--></div></div></div><!----></header> <main id="main" style="padding-top:0px" class="svelte-12qhfyh"><!--[!--><div class="flex h-full w-full items-center justify-center"><svg role="status" class="inline -mt-px animate-spin dark:text-gray-600 w-8 h-8 text-gray-300 fill-purple-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"></path><path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"></path></svg><!----></div><!--]--></main></div></div> <footer class="credit svelte-12qhfyh">Based on <a href="http://poloclub.github.io/transformer-explainer" target="_blank" rel="noopener noreferrer">Transformer Explainer</a> by Cho, Kim, Karpekov, Helbling, Wang, Lee, Hoover &amp; Chau — IEEE VIS 2024.</footer><!--]--><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_ewgztm = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/transformer-explainer"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.OOQwLUh8.js"),
+						import("./_app/immutable/entry/app.CtQB4_GL.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
