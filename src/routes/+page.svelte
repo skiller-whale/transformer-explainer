@@ -101,7 +101,7 @@
 
 	// Per-example default layer/head (0-indexed; UI displays as +1)
 	const exampleDefaults: Record<number, { block: number; head: number }> = {
-		2: { block: 5, head: 5 },  // Y G H Y G → layer 6, head 6
+		2: { block: 5, head: 5 },  // Y G H Y G H Y G → layer 6, head 6
 		3: { block: 9, head: 6 },  // Alice → layer 10, head 7
 		4: { block: 9, head: 6 }   // Bob   → layer 10, head 7
 	};

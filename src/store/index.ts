@@ -22,7 +22,7 @@ export const isLoaded = writable(false);
 export const inputTextExample = [
 	'A labrador is a type of',
 	'A',
-	'Y G H Y G',
+	'Y G H Y G H Y G',
 	'When Alice and Bob went out, Alice gave a drink to',
 	'When Alice and Bob went out, Bob gave a drink to'
 ];

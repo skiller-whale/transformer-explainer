@@ -21,7 +21,7 @@ OUTPUT_DIR = os.path.join(os.path.dirname(__file__), '../../constants/examples')
 PROMPTS = [
     'A labrador is a type of',
     'A',
-    'Y G H Y G',
+    'Y G H Y G H Y G',
     'When Alice and Bob went out, Alice gave a drink to',
     'When Alice and Bob went out, Bob gave a drink to',
 ]
